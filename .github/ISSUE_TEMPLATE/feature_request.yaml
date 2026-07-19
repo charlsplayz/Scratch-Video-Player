@@ -1,0 +1,39 @@
+name: Feature Request
+description: Suggest an Idea
+title: "[FEATURE REQUEST] <title>"
+labels: ["enhancement"]
+body:
+- type: checkboxes
+  attributes:
+    label: Has somebody already suggested this?
+    description: Please search to see if an issue already exists for the bug you encountered.
+    options:
+    - label: I have searched the existing issues
+      required: true
+- type: textarea
+  attributes:
+    label: Is this feature request related to a problem?
+    description: A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Describe the solution you'd like
+    description: A clear and concise description of what you want to happen.
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: If you have tried coming up with a solution yourself, what was it?
+    description: Share how you've tried fixing this problem by yourself.
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Additional context
+    description: |
+      Add any other context or screenshots about the feature request here.
+
+      Tip: You can attach images or log files by clicking this area to highlight it and then dragging files in.
+  validations:
+    required: false
