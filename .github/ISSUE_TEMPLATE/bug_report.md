@@ -1,28 +1,54 @@
----
-name: Bug report
-about: Report a Bug that we should fix!
-title: "[BUG REPORT]"
-labels: bug
-assignees: ''
+name: Bug Report
+description: File a bug/issue
+title: "[BUG] <title>"
+labels: ["Bug"]
+body:
+- type: checkboxes
+  attributes:
+    label: Is there an existing issue for this?
+    description: Please search to see if an issue already exists for the bug you encountered.
+    options:
+    - label: I have searched the existing issues
+      required: true
+- type: textarea
+  attributes:
+    label: Current Behavior
+    description: A concise description of what you're experiencing.
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Expected Behavior
+    description: A concise description of what you expected to happen.
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Steps To Reproduce
+    description: Steps to reproduce the behavior.
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Environment
+    description: |
+      examples:
+        - **OS**: Windows 10
+        - **Turbowarp Client Version**: v1.16.0
+        - **Video Player Version**: a1.10.2
+    value: |
+        - OS:
+        - Turbowarp Client Version:
+        - Video Player Version:
+    render: markdown
+  validations:
+    required: false
+- type: textarea
+  attributes:
+    label: Anything else?
+    description: |
+      Links? References? Anything that will give us more context about the issue you are encountering!
 
----
-
-**Describe the bug**
-A clear and concise description of what the bug is.
-
-**To Reproduce**
-Steps to reproduce the behavior.
-
-**Expected behavior**
-A clear and concise description of what you expected to happen.
-
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
-
-**Desktop (please complete the following information):**
- - OS: [e.g. Windows]
- - Turbowarp Version [e.g. v1.16.0]
- - Video Player Version [e.g. Alpha 1.10.2]
-
-**Additional context**
-Add any other context about the problem here.
+      Tip: You can attach images or log files by clicking this area to highlight it and then dragging files in.
+  validations:
+    required: false
