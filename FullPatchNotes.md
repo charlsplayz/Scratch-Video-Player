@@ -149,3 +149,5 @@ Thought I'd put all the patch notes so if anyone wants to view them, well here t
 - Minor Bug Fixes
 #### Known Bugs:
  - The Playback Time flickers when the value is updated on the HTML Version.
+### Alpha 0.11.62
+- Updated some assets (specifically the Select Audio File Popup, it now lets you know you can load videos with it)
