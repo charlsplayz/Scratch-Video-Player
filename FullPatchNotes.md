@@ -147,5 +147,5 @@ Thought I'd put all the patch notes so if anyone wants to view them, well here t
 - The project is now available compiled.
 - There is now a fallback for the Easter Egg in case you are using the packaged project, because from my testing it doesn't work as intended.
 - Minor Bug Fixes
-Known Bugs:
+#### Known Bugs:
  - The Playback Time flickers when the value is updated on the HTML Version.
